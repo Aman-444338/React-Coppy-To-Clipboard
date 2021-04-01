@@ -1,14 +1,13 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
-import Basic from './Component/Basic';
+import withGeneratedCode from './Hoc/withGeneratedCode'
 
 function App() {
   return (
     <div className="App">
-       <h1>React Coppy To Clipboard</h1>
-       <Basic  />
+      <button>Click Me</button>
     </div>
   );
 }
 
-export default App;
+export default withGeneratedCode({code: `<button>Click Me</button>`})(App);

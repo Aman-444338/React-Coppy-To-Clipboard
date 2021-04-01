@@ -16,8 +16,5 @@ code {
   position: absolute;
   right: 10px;
   font-size: large;
-}
-
-.btn-copy :hover{
   cursor: pointer;
 }

@@ -3,24 +3,10 @@ import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/nightOwl";
 import useCopyToClipboard from "../hooks/useCopyToClipboard";
 
-const exampleCode = `
-import React, { useState } from "react";
 
-function Example() {
-  const [count, setCount] = useState(0);
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
-`.trim();
-
-const Basic = () => {
+const Basic = ({code}) => {
+    const exampleCode = code.trim()
     const [isCopied, handleCopy] = useCopyToClipboard(3000);
   return (
     <Highlight
