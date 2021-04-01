@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-copy{
+  position: absolute;
+  right: 10px;
+  font-size: large;
+}
+
+.btn-copy :hover{
+  cursor: pointer;
+}
